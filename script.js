@@ -31,7 +31,7 @@ document.getElementById('login-form').onsubmit = async function (e) {
       const result = await response.json();
       
       if (result.success) {
-          window.location.href = '/admin';
+          window.location.href = '../../admin';
         } else {
             document.getElementById('login-error').innerText = 'Invalid username or password';
         }
